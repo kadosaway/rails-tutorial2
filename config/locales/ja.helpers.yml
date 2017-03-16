@@ -1,0 +1,13 @@
+ja:
+  application:
+    title: チュートリアル2
+    index:
+      topics: Topics
+  topics:
+    title: 話題
+    index:
+  helpers:
+    submit:
+      create: 作成
+      update: 更新
+      submit: 登録

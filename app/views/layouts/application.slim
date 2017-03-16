@@ -1,0 +1,14 @@
+doctype html
+html
+  head
+    title Tutorial2
+    = csrf_meta_tags
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+  body
+    .container
+      header.panel.panel-heading
+        h2 = t controller_name + '.title'
+      section.panel.panel-body
+        = yield
+      footer

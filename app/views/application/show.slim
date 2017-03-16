@@ -1,0 +1,11 @@
+= link_to t("#{controller_name}.index.title"), action: :index
+= form_for @record do |f|
+  table
+    tbody
+      - @record.try(:attributes).try(:each) do |k, v|
+        tr
+          th
+            = f.label k
+          td
+            = v
+= link_to t("#{controller_name}.edit.title"), id: @record.id, action: :edit
