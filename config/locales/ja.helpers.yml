@@ -7,6 +7,8 @@ ja:
     title: 話題
     index:
   helpers:
+    links:
+      new: 新規作成
     submit:
       create: 作成
       update: 更新

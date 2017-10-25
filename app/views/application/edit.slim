@@ -1,1 +1,6 @@
-= render 'form'
+.panel.panel-default
+  .panel-heading
+    = t ".#{controller_name}"
+    = t ".#{params[:action]}"  
+  .panel-body
+    = render 'form'

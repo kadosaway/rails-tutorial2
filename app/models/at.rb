@@ -1,0 +1,3 @@
+class At < Model
+  
+end

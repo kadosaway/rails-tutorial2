@@ -52,7 +52,7 @@ gem 'slim-rails'
 
 # bootstrap
 gem 'twitter-bootstrap-rails'
-gem 'less-rails'
+gem 'less-rails', git: 'https://github.com/MustafaZain/less-rails'
 gem 'therubyracer'
 
 gem 'simple_form'
