@@ -1,4 +1,4 @@
-= simple_form_for instance_variable_get('@' + controller_name.singularize) do |f|
-  - %w(name name_en text).each do |k|
+= simple_form_for instance do |f|
+  - edit_columns.each do |k|
     = f.input k, input_html: {class: 'form-control'}
   = f.submit

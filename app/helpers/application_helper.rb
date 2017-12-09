@@ -1,6 +1,8 @@
 require 'json'
 
 module ApplicationHelper
+  attr_accessor :instance, :edit_columns
+
   # 読み込んで
   def jload(json_file_path)
     open(json_file_path) do |io|

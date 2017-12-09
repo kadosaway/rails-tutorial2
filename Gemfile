@@ -56,3 +56,4 @@ gem 'less-rails', git: 'https://github.com/MustafaZain/less-rails'
 gem 'therubyracer'
 
 gem 'simple_form'
+gem 'mysql2'

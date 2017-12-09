@@ -71,12 +71,13 @@ class CreateTopics < ActiveRecord::Migration[5.0]
     
     
     create_table :txts do |t|
-      t.text :value, index: true
+      t.text :value
       t.string :type, index: true
       t.integer :belong_id, index: true, unsigned: true
       t.string :belong_type, index: true
     end
     
+    add_index :txts, :value, length: 255
     add_index :txts, [:type, :belong_id, :belong_type]
   end
 end
