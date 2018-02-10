@@ -13,3 +13,25 @@
  *= require_tree .
  *= require_self
  */
+
+.wday0 {
+	color: #fa0;
+}
+.wday1 {
+	color: #aaf;
+}
+.wday2 {
+	color: #f4a;
+}
+.wday3 {
+	color: #0af;
+}
+.wday4 {
+	color: #c00;
+}
+.wday5 {
+	color: #800;
+}
+.wday6 {
+	color: #aaf;
+}

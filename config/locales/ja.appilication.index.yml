@@ -1,0 +1,12 @@
+ja:
+  application:
+    index:
+      root: トップ
+      new: 新規作成
+      edit: 編集
+      new_comment: 投稿
+      destroy: 削除
+      year: 年
+      month: 月
+      day: 日
+      wday: 曜日

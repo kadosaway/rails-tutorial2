@@ -1,6 +1,7 @@
 .panel.panel-default
   .panel-heading
-    = t ".#{controller_name}"
-    = t ".#{params[:action]}"  
+    = link_to instance.class.model_name.human, instance
+    | &nbsp;>&nbsp;
+    = t ".#{params[:action]}"
   .panel-body
     = render 'form'

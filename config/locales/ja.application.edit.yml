@@ -1,0 +1,9 @@
+ja:
+  application:
+    edit:
+      title: 編集
+      new: 新規作成
+      edit: 編集
+      comments: 投稿
+      logins: ログイン
+      new_comment: 新規投稿

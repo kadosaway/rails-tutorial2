@@ -1,0 +1,9 @@
+ja:
+  application:
+    top:
+      main_links:
+        topics: 話題
+        comments: 投稿
+        cals: カレンダー
+        logins: アカウント
+      menu: 機能項目

@@ -1,0 +1,12 @@
+- instance = eval(controller_name.singularize)
+tr
+  td
+    = link_to instance[:id], instance
+  td
+    = link_to "#{instance.name}", instance
+  td
+    = instance.explanation
+  td.text-muted
+    = distance_of_time_in_words_to_now instance.updated_at
+  td.text-muted
+    = distance_of_time_in_words_to_now instance.created_at

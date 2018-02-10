@@ -1,0 +1,24 @@
+ul
+  li
+    = link_to t("#{controller_name}.index.title"), action: :index
+
+  li
+    = link_to t("application.edit.title"), id: instance.id, action: :edit
+
+= form_for instance do |f|
+  table
+    tbody
+      - show_columns.each do |k|
+        tr
+          th
+            = f.label k
+          td
+            = instance.try k
+ul
+
+  li
+    = link_to t('application.edit.new_comment'), new_topic_comment_path(instance)
+  - if instance.comments
+    table
+      tbody
+        = render instance.comments

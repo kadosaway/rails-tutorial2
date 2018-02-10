@@ -1,8 +1,8 @@
 .container
   .panel.
     .panel-heading
-      | top
+      = t '.menu'
     .panel-body
-      | TOP
-      = link_to t('.topics.index'), :topics
-  
+      - top_menus.each do |key|
+        .btn
+          = link_to t(".main_links.#{key}"), key

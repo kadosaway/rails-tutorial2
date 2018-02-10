@@ -1,6 +1,4 @@
-= link_to ".new", action: :new
-- if (records = instance_variable_get '@' + controller_name).present?
-  table.table
-    tbody
-      = render records
-  
+= render 'head2'
+
+.main
+    = render 'list_table'

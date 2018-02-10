@@ -1,0 +1,18 @@
+- instance = eval(controller_name.singularize)
+tr
+  td
+    = link_to instance[:id], instance
+  td
+    = link_to "#{instance.name}", instance
+  td
+    = instance.explanation
+  td.text-muted
+    = distance_of_time_in_words_to_now instance.updated_at
+  td.text-muted
+    = distance_of_time_in_words_to_now instance.created_at
+  td
+    = link_to t('application.index.edit'), edit_topic_path(topic)
+    |&nbsp;
+    = link_to t('application.index.new_comment'), new_topic_comment_path(topic_id: topic.id)
+    |&nbsp;
+    = link_to t('application.index.destroy'), instance, method: :destroy, confirm: :confirm_to_delete

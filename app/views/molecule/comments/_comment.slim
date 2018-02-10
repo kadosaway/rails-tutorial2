@@ -1,0 +1,14 @@
+tr
+  td
+    = link_to comment.belong_name, comment.belong
+
+  td
+    = link_to comment[:id], comment
+  td
+    = link_to comment.name, comment
+  td
+    = comment.explanation
+  = datetime_disp comment.updated_at, :td, class: 'text-muted'
+  = datetime_disp comment.created_at, :td, class: 'text-muted'
+  td
+    = link_to t('application.index.edit'), edit_comment_path(comment)

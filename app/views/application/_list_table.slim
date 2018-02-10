@@ -1,0 +1,9 @@
+- if records.present?
+  table.table
+    tbody.head
+      tr
+        - list_columns.each do |key|
+          td
+            = records.klass.human_attribute_name key
+    tbody.body
+      = render records

@@ -57,3 +57,5 @@ gem 'therubyracer'
 
 gem 'simple_form'
 gem 'mysql2'
+gem 'ransack'
+gem 'kaminari'

@@ -1,0 +1,18 @@
+.thead
+  - if year != now.year
+    = year
+    = t('application.index.year')
+
+  = month
+  = t('application.index.month')
+table.table.table-striped
+  tbody
+    tr
+      td.text-right
+        = t('application.index.day')
+
+      td
+        = t('application.index.wday')
+  tbody
+    = render instances if instances
+
