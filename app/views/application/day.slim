@@ -2,4 +2,6 @@
 = month
 = params[:day]
 
-= link_to t('application.show.index'), "/cals/#{ym}"
+= link_to t('application.show.index'), molecule_cals_path(id: ym)
+
+= link_to t(:new), new_event_molecule_cal_path(id: ym, day: params[:day])

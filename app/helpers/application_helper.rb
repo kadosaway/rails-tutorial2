@@ -5,7 +5,7 @@ module ApplicationHelper
   attr_writer :topic
 
   def top_menus
-    %i(topics cals logins)
+    %i(molecule_topics molecule_cals molecule_logins)
   end
 
   # 読み込んで

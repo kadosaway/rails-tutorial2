@@ -54,6 +54,11 @@ class Model < ActiveRecord::Base
       accepts_nested_attributes_for :comments
     end
 
+    def has_events
+	    has_many :events, class_name: Molecule::Event.name, as: :belong
+      accepts_nested_attributes_for :events
+    end
+
     def belong_topic
       delegate :name, to: :belong, prefix: :topic
       attr_reader :topic_id, :rel_topic

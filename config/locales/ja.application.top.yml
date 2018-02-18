@@ -2,8 +2,8 @@ ja:
   application:
     top:
       main_links:
-        topics: 話題
-        comments: 投稿
-        cals: カレンダー
-        logins: アカウント
+        molecule_topics: 話題
+        molecule_comments: 投稿
+        molecule_cals: カレンダー
+        molecule_logins: アカウント
       menu: 機能項目

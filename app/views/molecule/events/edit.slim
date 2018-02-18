@@ -1,0 +1,7 @@
+.panel.panel-default
+  .panel-heading
+    = link_to Molecule::Cal.model_name.human, molecule_cals_path(id: ym, day: params[:day])
+    | &nbsp;>&nbsp;
+    = t ".#{params[:action]}"
+  .panel-body
+    /= render 'form'

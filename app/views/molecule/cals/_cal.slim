@@ -3,3 +3,5 @@ tr class="wday#{cal.wday}"
     = cal.day
   td
     = cal.wday_name
+  td
+    = link_to t('.edit'), day_molecule_cal_path(id: ym, day: cal.day)

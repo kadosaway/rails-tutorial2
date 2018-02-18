@@ -6,4 +6,6 @@ class Molecule::Cal < At
   has_explanation
   has_name
   has_user
+  has_events
+
 end
