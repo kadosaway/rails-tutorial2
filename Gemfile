@@ -59,3 +59,7 @@ gem 'simple_form'
 gem 'mysql2'
 gem 'ransack'
 gem 'kaminari'
+
+gem 'devise'
+gem 'devise-i18n'
+

@@ -1,4 +1,5 @@
 class ApplicationController < ActionController::Base
+  before_action :authenticate_boss!
   protect_from_forgery with: :exception
 
   delegate :human_attribute_name, :ransack, :order,:where, :find_by, to: :controller_model
@@ -40,6 +41,12 @@ class ApplicationController < ActionController::Base
   end
 
   private
+
+  def authenticate_boss!
+    Rails.logger.info __LINE__
+    Rails.logger.info "cookies: #{cookies.inspect}"
+    super
+  end
 
   def edit_columns
     %i(name explanation)

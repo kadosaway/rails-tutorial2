@@ -34,4 +34,16 @@ module ApplicationHelper
     wday = Time.new(year,month,day).wday
     render 'cal', day: day, wday: wday, cal: cal
   end
+
+  def login_page?
+    controller_path == 'devise/sessions' && action_name == 'new'
+  end
+
+  def session_button
+    boss_signed_in? ? link_to(t('.logout'), destroy_boss_session_path, method: :delete, class: 'btn btn-default') : login_button
+  end
+
+  def login_button
+    link_to t('.login'), :new_boss_session, class: 'btn btn-default'
+  end
 end

@@ -1,0 +1,3 @@
+class Boss < User
+
+end

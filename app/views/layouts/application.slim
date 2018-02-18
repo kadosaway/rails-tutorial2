@@ -5,11 +5,21 @@ html
       | Tutorial2
     = csrf_meta_tags
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
-    /= javascript_include_tag 'application' #, data: {turbolinks: {track: :reload} }
+    = javascript_include_tag 'application', data: {turbolinks: {track: :reload} }
   body
     .container
+      header
+        
       header.panel.panel-heading
+        .text-right
+          = current_boss.try(:email)
+          = session_button unless login_page?
         h2 = t controller_name + '.title'
       section.panel.panel-body
+        p.notice
+          = notice
+        p.alert
+          = alert
         = yield
       footer
+        = t '.footer'

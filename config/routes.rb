@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   end
 
   resources :logins, module: :molecule
+  devise_for :bosses
 
   namespace :molecule do
     resources :topics

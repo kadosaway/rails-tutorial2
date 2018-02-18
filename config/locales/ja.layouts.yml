@@ -1,0 +1,7 @@
+ja:
+  layouts:
+    application:
+      login: ログイン
+      logout: ログアウト
+      footer: '今日という日がよい一日でありますように！'
+
