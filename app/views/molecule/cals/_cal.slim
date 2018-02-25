@@ -1,7 +1,7 @@
 tr class="wday#{cal.wday}"
   td.text-right
     = cal.day
-  td
+  td.text-center
     = cal.wday_name
   td
-    = link_to t('.edit'), day_molecule_cal_path(id: ym, day: cal.day)
+    = link_to t('.edit'), day_molecule_cal_path(id: ym, day: cal.day), class: 'btn btn-default'

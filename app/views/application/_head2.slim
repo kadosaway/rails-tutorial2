@@ -3,5 +3,5 @@
     = link_to t('application.index.root'), :root
     |&nbsp;>&nbsp;
     = t "#{controller_name}.title"
-  .buttons
-    = link_to t('application.index.new'), action: :new
+  .buttons.text-right
+    = link_to t('application.index.new'), {action: :new}, class: 'btn btn-default'

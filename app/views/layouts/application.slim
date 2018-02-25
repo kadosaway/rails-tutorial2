@@ -8,11 +8,12 @@ html
     = javascript_include_tag 'application', data: {turbolinks: {track: :reload} }
   body
     .container
-      header
-        
       header.panel.panel-heading
         .text-right
-          = current_boss.try(:email)
+          - if current_boss
+            span.glyphicon.glyphicon-home
+              = current_boss.try(:email)
+            |&nbsp;
           = session_button unless login_page?
         h2 = t controller_name + '.title'
       section.panel.panel-body

@@ -1,0 +1,7 @@
+ja:
+  activerecord:
+    models:
+      molecule/event: 出来事
+    attributes:
+      molecule/event:
+        id: ID

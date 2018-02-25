@@ -1,7 +1,17 @@
-= year
-= month
-= params[:day]
+= link_to "#{year}#{month}", molecule_cals_path(id: ym)
+= params_day
+= link_to t('application.index.new'), new_event_molecule_cal_path(id: ym, day: params[:day]), class: 'btn btn-default'
 
-= link_to t('application.show.index'), molecule_cals_path(id: ym)
-
-= link_to t(:new), new_event_molecule_cal_path(id: ym, day: params[:day])
+table
+ thead
+   tr
+     th.text-center
+       = t('.time')
+     th.text-center
+       = Molecule::Event.model_name.human
+ tbody
+  - [*0..23].each do | i |
+    tr
+      td.text-right
+        = "#{i}:00"
+      td

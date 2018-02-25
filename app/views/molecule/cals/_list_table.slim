@@ -8,13 +8,13 @@
 table.table.table-striped
   tbody
     tr
-      td.text-right
+      td.text-center.col-xs-1
         = t('application.index.day')
 
-      td
+      td.text-center.col-xs-1
         = t('application.index.wday')
-      td
-
+      td.col-xs-10
+        = Molecule::Event.model_name.human
   tbody
     = render instances if instances
 
